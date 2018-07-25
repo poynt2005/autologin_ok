@@ -118,7 +118,7 @@ class autoLogin:
         
             
 def main():
-    t = autoLogin("test003@gmail.com" , "test003")
+    t = autoLogin("" , "")
     t.login()
     t.sign()
     print(t.getMessage())
