@@ -17,10 +17,8 @@ def writeToJson(messageArr):
 
 def main():
     res = []
-
-    for i in range(0 , 3, 1):
-        email = 'poynt201%d@hotmail.com' % (i)
-        password = 'poynt201%d' % (i)
+    email = ''
+    password = ''
 
         try:
             a = autoLogin(email=email , pwd=password)
@@ -32,7 +30,6 @@ def main():
             res.append(mes)
         except:
             writeToLog(email ,'' ,  True)
-            
     if res:
         writeToJson(res)
 
